@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <div class="navigation">
+    <div class="menu">
+      <a class="menu-link" href="Index.html">Me</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Education.html">Education</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Work.html">Work</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Projects.html">Projects</a>
+    </div>
+    <div id="dropdown" class="menu">
+      <button class="menu-link" style="background: transparent; margin-left: 10px; border: 0px; text-decoration: underline;">Cheet Sheets</button>
+      <div class="dropdown-content">
+      <a href="Git.html">Git</a>
+      <a href="Powershell.html">Powershell</a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="Index.html">Me</a></li>
+        <li><a class="menu__item" href="Education.html">Education</a></li>
+        <li><a class="menu__item" href="Work.html">Work</a></li>
+        <li><a class="menu__item" href="Projects.html">Projects</a></li>
+        <li><a class="menu__item" href="Powershell.html">Powershell</a></li>
+        <li><a class="menu__item" href="Git.html">Git</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <h1>Powershell</h1>
+      <a id="cheet-link" class="resume" href="#function">Functions and parameters</a>
+      <a id="cheet-link" class="resume" href="#test-path">Test-Path</a>
+      <a id="cheet-link" class="resume" href="#out-file">Out-File</a>
+      <a id="cheet-link" class="resume" href="#set-content">Set-Content</a>
+      <a id="cheet-link" class="resume" href="#getchilditem">Get-ChildItem</a>
+      <a id="cheet-link" class="resume" href="#count-files">[files].Count</a>
+      <a id="cheet-link" class="resume" href="#for-each-object">ForEachObject</a>
+      <a id="cheet-link" class="resume" href="#where-object">Where-Object</a>
+      <a id="cheet-link" class="resume" href="#sort-object">Sort-Object</a>
+      <a id="cheet-link" class="resume" href="#join-path">Join-Path</a>
+      <p id="function" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;"></p>
+    <div>
+      <div>
+        <p id="function" class="main-text" style="padding-bottom: 30px; padding-top: 30px; border-bottom: 2px solid black;">
+          •	Create a function => <span style="background-color: #c74b2d;">function [name] {…}</span>
+          Declare parameters to be passed in the function call and used in function => 
+          <span style="background-color: #c74b2d;">param (
+          [data-type]$name
+          [string]$path
+          )</span>       
+        </p>
+      </div>
+      <div>
+        <p id="test-path" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Test path cmdlet checks if the path exists and if it leads to something => <span style="background-color: #c74b2d;"> Test-Path -Path $path</span> ( <span style="background-color: #c74b2d;">Test-Path 
+            -Path $path -PathType Container</span> => 
+          will tell if the path contains directories == Container, files == Leaf or both == Any)
+        </p>
+      </div>
+      <div>
+        <p id="out-file" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To create a new file in the current directory and write something to it => <span style="background-color: #c74b2d;">Out-File -FilePath [name.txt]</span> ( <span style="background-color: #c74b2d;">Out-File -FilePath [name.txt] 
+          -NoClobber</span> => can be added to not overwrite already existing files, <span style="background-color: #c74b2d;">Out-File -Append -FilePath [path]</span> => -Append can be added to not overwrite existing content but to add content at the end)
+        </p>
+      </div>
+      <div>
+        <p id="set-content" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Create a new file in current directory that has a value => <span style="background-color: #c74b2d;">Set-Content -Path [name.txt] -Value [string]</span> (this will create a new document entirely or overwrite previous content)
+        </p>
+      </div>
+      <div>
+        <p id="getchilditem" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Get items in a specific location => <span style="background-color: #c74b2d;">Get-ChildItem -Path [path]</span> ( add -File == for only files, -Directory == for only folders).
+        </p>
+      </div>
+      <div>
+        <p id="count-files" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Count the files and check if the count is 0 => <span style="background-color: #c74b2d;">[files].Count -eq 0</span>
+        </p>
+      </div>
+      <div>
+        <p id="for-each-object" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To iterate through each file => <span style="background-color: #c74b2d;">[collection of  input objects aka files here] | ForEachObject {….}</span> ( {…} => is a script block that can be used to specify the operation). 
+          ( <span style="background-color: #c74b2d;">{  $_.Name | Out-File -Append -FilePath $reportFilePath }</span> => name specifies the file name. $_ => specifies the current object and the action performed on the object after the pipe.)
+        </p>
+      </div>
+      <div>
+        <p id="where-object" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Filter objects => <span style="background-color: #c74b2d;">$files | Where-Object { $_.LastWriteTime -ge $parsedDateTime }</span> (-ge == greater then or equel)
+        </p>
+      </div>
+      <div>
+        <p id="sort-object" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Sort objects => <span style="background-color: #c74b2d;">$filteredFiles | Sort-Object -Property Name -Descending</span>
+        </p>
+      </div>
+      <div>
+        <p id="join-path" class="main-text" style="padding-top: 30px;">
+          •	Combine the current folder's path with the filename 'Report.txt' to create a complete file path => <span style="background-color: #c74b2d;">Join-Path -Path (Get-Location) -ChildPath "Report.txt"</span>
+        </p>
+      </div>
+    </div>
+    <footer style="padding-bottom: 100px;">
+    </footer>
+  </div>
+  </body>
+</html>

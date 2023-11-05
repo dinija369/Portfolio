@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <div class="navigation">
+    <div class="menu">
+      <a class="menu-link" href="Index.html">Me</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Education.html">Education</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Work.html">Work</a>
+    </div>
+    <div class="menu">
+      <a style="text-decoration: underline;" class="menu-link" href="Projects.html">Projects</a>
+    </div>
+    <div id="dropdown" class="menu">
+      <button class="menu-link" style="background: transparent; margin-left: 10px; border: 0px;">Cheet Sheets</button>
+      <div class="dropdown-content">
+      <a href="Git.html">Git</a>
+      <a href="Powershell.html">Powershell</a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="Index.html">Me</a></li>
+        <li><a class="menu__item" href="Education.html">Education</a></li>
+        <li><a class="menu__item" href="Work.html">Work</a></li>
+        <li><a class="menu__item" href="Projects.html">Projects</a></li>
+        <li><a class="menu__item" href="Powershell.html">Powershell</a></li>
+        <li><a class="menu__item" href="Git.html">Git</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <img class="image" src="profile.jpg" alt="Girl in a jacket" width="150px" height="150px">
+    <div id="info-projects" class="information">
+      <p>Dinija Kude</p>
+      <p id="email">Email: <a class="email" href="mailto:dinija369@gmail.com">dinija369@gmail.com</a></p>
+      <p>Phone: <a href="tel:07841054283">07841054283</a></p>
+      <a class="resume" href="Dinija Kude CV.pdf">Resume</a>
+    </div>
+    <div class="about">
+      <h1>Projects</h1>
+      <div>
+        <h2 class="resume">C# - Windows Forms budgeting system - in progress</h2>
+        <a class="github-link" href="https://github.com/dinija369/C-SharpBudgetingSystemWinForms">GitHub Link</a>
+        <a class="github-link" href="winforms.html">Details</a>
+        <p class="main-text">This project incorporates session management, authentication, and database-driven data storage. It offers various functionalities accessible through manager or 
+          team profiles, such as adding budgets and expenses, managing notifications, overseeing teams, generating reports, and more.
+        </p>
+        <p class="skills">C#</p>
+        <p class="skills">WinForms</p>
+        <p class="skills">SSMS</p>
+        <p class="skills">SQL</p>
+        <p class="skills">.NET Framework</p>
+        <p class="skills">Visual Studio 2022</p>
+      </div>
+      <div>
+        <h2 class="resume">C# - budgeting system console application</h2>
+        <a class="github-link" href="https://github.com/dinija369/C-BudgetingSystemConsole">GitHub Link</a>
+        <p class="main-text">This project incorporates session management, authentication, and database-driven data storage. It offers various functionalities accessible through manager or 
+          team profiles, such as adding budgets and expenses, managing notifications, overseeing teams, generating reports, and more.
+        </p>
+        <p class="skills">C#</p>
+        <p class="skills">SSMS</p>
+        <p class="skills">SQL</p>
+        <p class="skills">.NET Framework</p>
+        <p class="skills">Visual Studio 2022</p>
+      </div>
+      <div>
+        <h2 class="resume">Python - Flask password manager</h2>
+        <a class="github-link" href="https://github.com/dinija369/PythonPasswordManager">GitHub Link</a>
+        <p class="main-text">This project employs robust security practices, including hashing, salting, and encryption 
+          to securely store user passwords in an SSMS database.
+        </p>
+        <p class="skills">Python</p>
+        <p class="skills">Flask</p>
+        <p class="skills">SSMS</p>
+        <p class="skills">SQL</p>
+        <p class="skills">CSS</p>
+        <p class="skills">Visual Studio Code</p>
+        <p class="skills">HTML</p>
+        <p class="skills">bcrypt</p>
+        <p class="skills">Fernet</p>
+      </div>
+      <div>
+        <h2 class="resume">Vulnerable website</h2>
+        <a class="github-link" href="https://github.com/dinija369/VulnerableWebsite">GitHub Link</a>
+        <p class="main-text">This website, developed on a Linux platform, incorporates CSS, HTML, PHP, and MySQL, featuring OWASP TOP 10 vulnerabilities such as 
+          SQL injection, cross-site scripting, and improper user input validation. Eash page has a vulnerability listed at the top left corner. 
+          The code also includes instructions on how to prevent the vulnerability from being exploited.
+        </p>
+        <p class="skills">CSS</p>
+        <p class="skills">HTML</p>
+        <p class="skills">PHP</p>
+        <p class="skills">MySQL</p>
+        <p class="skills">Visual Studio Code</p>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  </body>
+</html>

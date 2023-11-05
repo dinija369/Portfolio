@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <div class="navigation">
+    <div class="menu">
+      <a class="menu-link" href="Index.html">Me</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Education.html">Education</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Work.html">Work</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Projects.html">Projects</a>
+    </div>
+    <div id="dropdown" class="menu">
+      <button class="menu-link" style="background: transparent; margin-left: 10px; border: 0px; text-decoration: underline;">Cheet Sheets</button>
+      <div class="dropdown-content">
+      <a href="Git.html">Git</a>
+      <a href="Powershell.html">Powershell</a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="Index.html">Me</a></li>
+        <li><a class="menu__item" href="Education.html">Education</a></li>
+        <li><a class="menu__item" href="Work.html">Work</a></li>
+        <li><a class="menu__item" href="Projects.html">Projects</a></li>
+        <li><a class="menu__item" href="Powershell.html">Powershell</a></li>
+        <li><a class="menu__item" href="Git.html">Git</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <h1>Git</h1>
+      <a id="cheet-link" class="resume" href="#git-init">git init</a>
+      <a id="cheet-link" class="resume" href="#github">Add GitHub repository</a>
+      <a id="cheet-link" class="resume" href="#push">git push</a>
+      <a id="cheet-link" class="resume" href="#commit">commit</a>
+      <a id="cheet-link" class="resume" href="#status">status</a>
+      <a id="cheet-link" class="resume" href="#add">add</a>
+      <a id="cheet-link" class="resume" href="#reset">reset</a>
+      <a id="cheet-link" class="resume" href="#log">log</a>
+      <a id="cheet-link" class="resume" href="#checkout">checkout</a>
+      <a id="cheet-link" class="resume" href="#diff">diff</a>
+      <a id="cheet-link" class="resume" href="#rm">Delete from working and staging area</a>
+      <a id="cheet-link" class="resume" href="#branch">Create a new branch</a>
+      <a id="cheet-link" class="resume" href="#merge">merge</a>
+      <a id="cheet-link" class="resume" href="#delete-branch">Delete branch</a>
+      <a id="cheet-link" class="resume" href="#stash">stash</a>
+      <a id="cheet-link" class="resume" href="#download-github">Download from GitHub</a>
+      <a id="cheet-link" class="resume" href="#delete-commits">Delete previous commits</a>
+      <a id="cheet-link" class="resume" href="#remove-commits-github">Remove deleted commits from Github</a>
+      <p id="function" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;"></p>
+    <div>
+      <div>
+        <p id="git-init" class="main-text" style="padding-bottom: 30px; padding-top: 30px; border-bottom: 2px solid black;">
+          •	Initialize a repository => <span style="background-color: #c74b2d;">git init</span>
+        </p>
+      </div>
+      <div>
+        <p id="github" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Add a new remote repository with github => <span style="background-color: #c74b2d;"> git remote add origin https://github.com/yourusername/your-repo.git</span>
+        </p>
+      </div>
+      <div>
+        <p id="push" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	First time pushing to github => <span style="background-color: #c74b2d;">git push -u origin master</span> (after just use => <span style="background-color: #c74b2d;">git push</span>)
+        </p>
+      </div>
+      <div>
+        <p id="commit" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Taking a snapshot => <span style="background-color: #c74b2d;">git commit -m “message”</span> (<span style="background-color: #c74b2d;">git commit -a -m</span> => commits and stages everything)
+        </p>
+      </div>
+      <div>
+        <p id="status" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	How things are => <span style="background-color: #c74b2d;">git status</span>
+        </p>
+      </div>
+      <div>
+        <p id="add" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Add files to staging area where they are tracked by git but not committed yet (no snapshot yet) => <span style="background-color: #c74b2d;">git add file </span>
+          (<span style="background-color: #c74b2d;">git add . </span> => add all new and modified files)
+        </p>
+      </div>
+      <div>
+        <p id="reset" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To remove all the files from staging area after git add => <span style="background-color: #c74b2d;">git reset</span>
+        </p>
+      </div>
+      <div>
+        <p id="log" class="main-text" style="padding-top: 30px;">
+          •	See what commits have been submitted by who and when including the commit message => <span style="background-color: #c74b2d;">git log</span>
+        </p>
+          <p class="main-text">
+            •	View all the currently existing branches => <span style="background-color: #c74b2d;">git log -- file</span>
+          </p>
+        <p class="main-text">
+          •	See what commits have been submitted for a specific file => <span style="background-color: #c74b2d;">git log -- file</span>
+        </p>
+      </div>
+      <div>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	See a commit graph. All commits line by line and branching. Also shows where the head is pointing at => <span style="background-color: #c74b2d;">git log --all --decorate --oneline --graph</span>
+        </p>
+      </div>
+      <div>
+        <p id="checkout" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Get a deleted file back to a working directory and tracked directory from a previous commit => <span style="background-color: #c74b2d;">git checkout 9ddb9 -- file</span>
+        </p>
+      </div>
+      <div>
+        <p id="diff" class="main-text" style="padding-top: 30px;">
+          •	View the difference between tracked files and the working directory. Will not show untracked files or committed files. Red means removed, green means added => 
+          <span style="background-color: #c74b2d;">git diff </span>(<span style="background-color: #c74b2d;">git diff --staged </span> => difference between tracked files aka staging area vs most recent commit aka snapshot)
+        </p>
+        <p class="main-text">
+          •	See what will be changed when a branch is merged into master => <span style="background-color: #c74b2d;">git diff master..branch-name</span>
+        </p>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	To see changes between any file and any previous commit => <span style="background-color: #c74b2d;">git diff commit-hash file-name </span>(can take other arguments)
+        </p>
+      </div>
+      <div>
+        <p id="rm" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	Delete a file from working area and staging area aka tracked by git => <span style="background-color: #c74b2d;">git rm file</span>
+        </p>
+      </div>
+      <div>
+        <p id="branch" class="main-text" style="padding-top: 30px;">
+          •	Create a new branch or switch to another branch => <span style="background-color: #c74b2d;">git branch branch-name</span>
+        </p>
+        <p class="main-text">
+          •	To create and checkout a new branch at the same time => <span style="background-color: #c74b2d;">git checkout -b branch-name</span>
+        </p>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	See what commits have been submitted for a specific file => <span style="background-color: #c74b2d;">git branch</span>
+        </p>
+      </div>
+      <div>
+        <p id="merge" class="main-text" style="padding-top: 30px;">
+          •	To merge a branch with master => <span style="background-color: #c74b2d;">git merge branch-name</span>
+        </p>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	To see what branches have been merged with master => <span style="background-color: #c74b2d;">git branch --merged</span>
+        </p>
+      </div>
+      <div>
+        <p id="delete-branch" class="main-text" style="padding-top: 30px;">
+          •	To delete a branch when it is merged => <span style="background-color: #c74b2d;">git branch -d branch-name</span>
+        </p>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	To delete a branch that is not merged yet => <span style="background-color: #c74b2d;">git branch -D branch-name</span>
+        </p>
+      </div>
+      <div>
+        <p id="stash" class="main-text" style="padding-top: 30px;">
+          •	Save changes to a working tree temporarily and locally in a separate area => <span style="background-color: #c74b2d;">git stash</span>
+        </p>
+        <p class="main-text">
+          •	See the stashes => <span style="background-color: #c74b2d;">git stash list </span>(<span style="background-color: #c74b2d;">git stash list -p </span> => see the edits made in each stash)
+        </p>
+        <p class="main-text">
+          •	Reapply the most recent stash => <span style="background-color: #c74b2d;">git stash apply </span>(<span style="background-color: #c74b2d;">git stash pop</span> => apply the stash and remove it)
+        </p>
+        <p class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black;">
+          •	To apply a specific stash => <span style="background-color: #c74b2d;">git stash apply label</span>
+        </p>
+      </div>
+      <div>
+        <p id="download-github" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To download from GitHub => <span style="background-color: #c74b2d;">git clone path</span>
+        </p>
+      </div>
+      <div>
+        <p id="delete-commits" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To delete previous commits from git => <span style="background-color: #c74b2d;">git reset --hard HEAD~1</span> or <span style="background-color: #c74b2d;">git reset --hard sha1-commit-id</span>
+        </p>
+      </div>
+      <div>
+        <p id="remove-commits-github" class="main-text" style="padding-bottom: 30px; border-bottom: 2px solid black; padding-top: 30px;">
+          •	To remove the deleted commits in github => <span style="background-color: #c74b2d;">git push origin HEAD --force</span>
+        </p>
+      </div>
+    </div>
+    <footer style="padding-bottom: 50px;">
+      <h3 style="color: white;">References</h3>
+      <a class="references" href="https://elanderson.net/2020/10/add-git-ignore-to-an-existing-visual-studio-solution-new-git-experience/#:~:text=Open%20Visual%20Studio%20and%20the,Add%20button%20for%20Ignore%20file">Add .gitgnore in visual studio</a>
+      <a class="references" href="https://www.youtube.com/watch?v=uR6G2v_WsRA&t=575s">Youtube video 1</a>
+      <a class="references" href="https://www.youtube.com/watch?v=FyAAIHHClqI&t=914s">Youtube video 2</a>
+      <a class="references" href="https://www.youtube.com/watch?v=Gg4bLk8cGNo">Youtube video 3</a>
+      <a class="references" href="https://articles.assembla.com/en/articles/2941346-how-to-delete-commits-from-a-branch-in-git">Article about deleting commits</a>
+    </footer>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <div class="navigation">
+    <div class="menu">
+      <a class="menu-link" href="Index.html">Me</a>
+    </div>
+    <div class="menu">
+      <a style="text-decoration: underline;" class="menu-link" href="Education.html">Education</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Work.html">Work</a>
+    </div>
+    <div class="menu">
+      <a class="menu-link" href="Projects.html">Projects</a>
+    </div>
+    <div id="dropdown" class="menu">
+      <button class="menu-link" style="background: transparent; margin-left: 10px; border: 0px;">Cheet Sheets</button>
+      <div class="dropdown-content">
+      <a href="Git.html">Git</a>
+      <a href="Powershell.html">Powershell</a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="Index.html">Me</a></li>
+        <li><a class="menu__item" href="Education.html">Education</a></li>
+        <li><a class="menu__item" href="Work.html">Work</a></li>
+        <li><a class="menu__item" href="Projects.html">Projects</a></li>
+        <li><a class="menu__item" href="Powershell.html">Powershell</a></li>
+        <li><a class="menu__item" href="Git.html">Git</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <img class="image" src="profile.jpg" alt="Girl in a jacket" width="150px" height="150px">
+    <div id="info-education" class="information">
+      <p>Dinija Kude</p>
+      <p id="email">Email: <a class="email" href="mailto:dinija369@gmail.com">dinija369@gmail.com</a></p>
+      <p>Phone: <a href="tel:07841054283">07841054283</a></p>
+      <a class="resume" href="Dinija Kude CV.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="about">
+      <h1>Education</h1>
+      <div>
+        <h2>BSc (Hons) Cyber Security 2020 - 2023 Anglia Ruskin University, Cambridge</h2>
+        <p class="main-text">
+          Modules: Java Budgeting System (85%), Computer Systems (92%), Database Design and Implementation (83%), Final Project - Investigation of 7 software security 
+          vulnerability scanning tools (63%), Software Security (96%), Security Management Operations and analytics (74%), Digital Forensics and Malware Science (77%), 
+          Network Routing and Switching Essentials (84%), Core Mathematics for Computing (89%), Cyber Crime Fundamentals (91%)
+        </p>
+      </div>
+      <div>
+        <h2>
+          Foundation in Engineering, Computing and Technology 2019 - 2020 ARU College, Cambridge
+        </h2>
+        <p class="main-text">
+          Grade - A
+        </p>
+      </div>
+      <div>
+        <h2>
+          GCSE (or equivalent) - 2007 - 2010 Grobinas High School
+        </h2>
+        <p class="main-text">
+          Maths B, English C
+        </p>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  </body>
+</html>
